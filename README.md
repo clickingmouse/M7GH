@@ -5,6 +5,7 @@ Repo should have
 release branch & other featured branch
 
 Features & steps
+0 login webserver
 1 create release branch and clone into server
 2 test react hello world
 3 mongodb setup
