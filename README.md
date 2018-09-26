@@ -8,7 +8,7 @@ Features & steps
 0 login webserver
 0.1 mac - complete
 0.2 win - use puttygen to conver id.rsa public key to ppk for putty.ssh
-0.3 setup configure nginx and/or apache
+0.3 setup configure nginx and/or apache and/or node
 
 1 create release branch and clone into server
 
