@@ -11,8 +11,13 @@ Features & steps
 0.3 setup configure nginx and/or apache and/or node
 
 1 create release branch and clone into server
-1.1 create-react-app locally
+
+1.1 create-react-app locally - done
+
+1.1.1 create master and branches on github
+
 1.2 push to github
+
 1.3 clone app from github to server
 
 
