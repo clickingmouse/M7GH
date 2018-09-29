@@ -11,6 +11,10 @@ Features & steps
 0.3 setup configure nginx and/or apache and/or node
 
 1 create release branch and clone into server
+1.1 create-react-app locally
+1.2 push to github
+1.3 clone app from github to server
+
 
 2 test react hello world
 
