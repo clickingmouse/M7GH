@@ -16,7 +16,9 @@ Features & steps
 
 1.1.1 create master and branches on github
 
-1.2 push to github
+1.2 push to github 
+
+1.2.1 -- fork branch for styled-component library testing 7 development
 
 1.3 clone app from github to server
 
