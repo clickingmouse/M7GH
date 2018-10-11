@@ -10,10 +10,25 @@ const Navbar = () => {
         <Link to="/" className="brand-logo">
           Majestic 7 Guesthouse
         </Link>
+        <a href="" className="sidenav-trigger" data-target="mobile-menu">
+          <i className="material-icons">menu</i>
+        </a>
+
         <span className="right hide-on-med-and-down">
           <SignedInLinks />
           <SignedOutLinks />
           <ul className="right">
+            <li>
+              <a href="#">Our Rooms</a>
+            </li>
+            <li>
+              <a href="#">Getting Here</a>
+            </li>
+            <li>
+              <a href="#">Tips &amp; Guides</a>
+            </li>
+          </ul>
+          <ul className="sidenav grey lighten-2" id="mobile-menu">
             <li>
               <a href="#">Our Rooms</a>
             </li>
