@@ -19,6 +19,9 @@ const Navbar = () => {
           <SignedOutLinks />
           <ul className="right">
             <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
               <a href="#">Our Rooms</a>
             </li>
             <li>
@@ -28,6 +31,7 @@ const Navbar = () => {
               <a href="#">Tips &amp; Guides</a>
             </li>
           </ul>
+
           <ul className="sidenav grey lighten-2" id="mobile-menu">
             <li>
               <a href="#">Our Rooms</a>
