@@ -5,13 +5,26 @@ import SignedOutLinks from "./SignedOutLinks";
 
 const Navbar = () => {
   return (
-    <nav class="nav-wrapper grey darken-3">
-      <div class="container">
+    <nav className="nav-wrapper grey darken-3">
+      <div className="container">
         <Link to="/" className="brand-logo">
           Majestic 7 Guesthouse
         </Link>
-        <SignedInLinks />
-        <SignedOutLinks />
+        <span className="right hide-on-med-and-down">
+          <SignedInLinks />
+          <SignedOutLinks />
+          <ul className="right">
+            <li>
+              <a href="#">Our Rooms</a>
+            </li>
+            <li>
+              <a href="#">Getting Here</a>
+            </li>
+            <li>
+              <a href="#">Tips &amp; Guides</a>
+            </li>
+          </ul>
+        </span>
       </div>
     </nav>
   );
