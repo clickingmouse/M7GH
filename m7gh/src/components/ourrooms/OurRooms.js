@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import budgetImg from "../../images/budget_room.jpg";
+//"../../images/budget_room.jpg";
 
 export class OurRooms extends Component {
   render() {
