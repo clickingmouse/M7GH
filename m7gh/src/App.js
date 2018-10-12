@@ -8,6 +8,7 @@ import GuidesGuide from "./components/guidesguide/GuidesGuide";
 import AroundUs from "./components/aroundus/AroundUs";
 import About from "./components/about/About";
 import Footer from "./components/layout/Footer";
+import OurRooms from "./components/ourrooms/OurRooms";
 
 class App extends Component {
   render() {
@@ -16,6 +17,8 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Route path="/home" component={Home} />
+          <Route path="/rooms" component={OurRooms} />
+
           <Route path="/about" component={About} />
           <Route path="/getting-here" component={GettingHere} />
           <Route path="/around-us" component={AroundUs} />
