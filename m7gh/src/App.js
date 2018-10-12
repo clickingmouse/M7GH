@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact";
 import GuidesGuide from "./components/guidesguide/GuidesGuide";
 import AroundUs from "./components/aroundus/AroundUs";
 import About from "./components/about/About";
+import Footer from "./components/layout/Footer";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/around-us" component={AroundUs} />
           <Route path="/guides-guide" component={GuidesGuide} />
           <Route path="/contact" component={Contact} />
+          <Footer />
         </div>
       </BrowserRouter>
     );
