@@ -10,7 +10,6 @@ export class OurRooms extends Component {
       <div class="ourrooms container">
         <h5>Our Rooms</h5>
         <RoomsCollection />
-        <Rooms />
       </div>
     );
   }

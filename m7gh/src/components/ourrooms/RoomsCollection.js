@@ -27,10 +27,74 @@ const RoomsCollection = () => {
             </a>
           </div>
         </li>
-        <li class="collection-item">Single</li>
-        <li class="collection-item">Double</li>
-        <li class="collection-item">Twin</li>
-        <li class="collection-item">Triple</li>
+        <li class="collection-item">
+          {" "}
+          <div class="row">
+            <div class="col s12 l8">
+              <img src={singleImg} alt="SingleRoomIMG" class="responsive-img" />
+            </div>
+            <span class="title">Title</span>
+            <p>
+              First Line <br />
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content">
+              <i class="material-icons">grade</i>
+            </a>
+          </div>
+        </li>
+        <li class="collection-item">
+          {" "}
+          <div class="row">
+            <div class="col s12 l8">
+              <img src={doubleImg} alt="DoubleIMG" class="responsive-img" />
+            </div>
+            <span class="title">Title</span>
+            <p>
+              First Line <br />
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content">
+              <i class="material-icons">grade</i>
+            </a>
+          </div>
+        </li>
+        <li class="collection-item">
+          {" "}
+          <div class="row">
+            <div class="col s12 l8">
+              <img src={twinImg} alt="TwinRoomIMG" class="responsive-img" />
+            </div>
+            <span class="title">Title</span>
+            <p>
+              First Line <br />
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content">
+              <i class="material-icons">grade</i>
+            </a>
+          </div>
+        </li>
+        <li class="collection-item">
+          {" "}
+          <div class="row">
+            <div class="col s12 l8">
+              <img
+                src={tripleAImg}
+                alt="TripleRoomIMG"
+                class="responsive-img"
+              />
+            </div>
+            <span class="title">Title</span>
+            <p>
+              First Line <br />
+              Second Line
+            </p>
+            <a href="#!" class="secondary-content">
+              <i class="material-icons">grade</i>
+            </a>
+          </div>
+        </li>
       </ul>
     </div>
   );
