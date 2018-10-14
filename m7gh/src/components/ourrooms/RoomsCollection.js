@@ -17,7 +17,7 @@ const RoomsCollection = () => {
             <div class="col s12 l8">
               <img src={budgetImg} alt="SingleRoomIMG" class="responsive-img" />
             </div>
-            <span class="title">Title</span>
+            <span class="title">Budget Room</span>
             <p>
               First Line <br />
               Second Line

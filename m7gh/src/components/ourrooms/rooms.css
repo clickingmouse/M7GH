@@ -18,3 +18,8 @@ img {
 .row .col {
   padding: 0px;
 }
+
+img.responsive-img {
+  height: 174px;
+  width: 470px;
+}

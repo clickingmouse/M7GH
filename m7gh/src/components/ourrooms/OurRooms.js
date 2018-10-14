@@ -6,12 +6,7 @@ import RoomsCollection from "./RoomsCollection";
 
 export class OurRooms extends Component {
   render() {
-    return (
-      <div class="ourrooms container">
-        <h5>Our Rooms</h5>
-        <RoomsCollection />
-      </div>
-    );
+    return <RoomsCollection />;
   }
 }
 
