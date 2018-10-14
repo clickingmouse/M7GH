@@ -21,5 +21,7 @@ img {
 
 .collection img.responsive-img {
   height: 174px;
-  width: 70%;
+
+  width: 100%;
+
 }
