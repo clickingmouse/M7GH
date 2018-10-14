@@ -1,4 +1,4 @@
-p {
+.collection-item p {
   background-color: green;
 }
 
@@ -11,15 +11,17 @@ img {
   /*background-color: yellow;*/
 }
 
-.row {
+.collection .row {
   margin: 0px;
 }
 
-.row .col {
+.collection .row .col {
   padding: 0px;
 }
 
-img.responsive-img {
+.collection img.responsive-img {
   height: 174px;
+
   width: 100%;
+
 }
