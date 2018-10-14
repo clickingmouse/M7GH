@@ -1,4 +1,5 @@
 import React from "react";
+import "./rooms.css";
 import budgetImg from "../../images/budget_room.jpg";
 import singleImg from "../../images/single.JPG";
 import doubleImg from "../../images/double.png";

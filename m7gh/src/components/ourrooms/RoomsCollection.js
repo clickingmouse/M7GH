@@ -12,9 +12,9 @@ const RoomsCollection = () => {
         <li class="collection-header">
           <h4>Our Rooms</h4>
         </li>
-        <li class="collection-item avatar">
+        <li class="collection-item ">
           <div class="row">
-            <div class="col s12 l4">
+            <div class="col s12 l8">
               <img src={budgetImg} alt="SingleRoomIMG" class="responsive-img" />
             </div>
             <span class="title">Title</span>
