@@ -1,12 +1,9 @@
 import React, { Component } from "react";
+import AroundUsSummary from "./AroundUsSummary";
 
 export class AroundUs extends Component {
   render() {
-    return (
-      <div class="aroundus container">
-        <p>Around Us</p>
-      </div>
-    );
+    return <AroundUsSummary />;
   }
 }
 
