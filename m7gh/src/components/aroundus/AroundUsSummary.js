@@ -30,17 +30,16 @@ export class AroundUsSummary extends Component {
           <div class="col s3">
             <img src={eggtartImg} class="responsive-img" />
           </div>
-
-          <div class="row">
-            <div class="col s3">
-              <img src={hkbakeryImg} class="responsive-img" />
-            </div>
-            <div class="col s3">BBB</div>
-            <div class="col s3">
-              <img src={dimsumImg} class="responsive-img" />
-            </div>
-            <div class="col s3">DDD</div>
+        </div>
+        <div class="row">
+          <div class="col s3">
+            <img src={hkbakeryImg} class="responsive-img" />
           </div>
+          <div class="col s3">BBB</div>
+          <div class="col s3">
+            <img src={dimsumImg} class="responsive-img" />
+          </div>
+          <div class="col s3">DDD</div>
         </div>
       </div>
     );
