@@ -1,19 +1,14 @@
 import React from "react";
+import FooterAbout from "../footer/FooterAbout";
 
 const Footer = () => {
   return (
     <div>
-      <footer class="page-footer grey darken-3">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 l6">
-              <h5>About Us</h5>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quisquam vel quaerat voluptatum eaque quod voluptates facilis,
-                non vero incidunt modi atque perspiciatis aspernatur ullam
-                fugiat porro cum. Ratione, dolores minima?
-              </p>
+      <footer className="page-footer grey darken-3">
+        <div className="container ">
+          <div className="row">
+            <div className="col s12 l6">
+              <FooterAbout />
             </div>
             <div class="col s12 l4 offset-l2">
               <h5>Connect</h5>
