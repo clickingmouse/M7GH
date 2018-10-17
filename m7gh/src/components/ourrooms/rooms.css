@@ -1,0 +1,27 @@
+.collection-item p {
+  background-color: green;
+}
+
+img {
+  display: block;
+}
+
+.collection .collection-item {
+  padding: 0px;
+  /*background-color: yellow;*/
+}
+
+.collection .row {
+  margin: 0px;
+}
+
+.collection .row .col {
+  padding: 0px;
+}
+
+.collection img.responsive-img {
+  height: 174px;
+
+  width: 100%;
+
+}
