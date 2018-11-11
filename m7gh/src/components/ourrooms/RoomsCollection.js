@@ -12,133 +12,133 @@ import budgetRoomImg3 from "../../images/budget/budget_room_3.JPG";
 const RoomsCollection = () => {
   return (
     <div>
-  <ul class="collection">
-    <li class="collection-item ">
-    <div class="row">
-    <div class="col s12  l4">
-              <img src={budgetRoomImg1} alt="SingleRoomIMG" class="responsive-img" />
+  <ul className="collection">
+    <li className="collection-item ">
+    <div className="row">
+    <div className="col s12  l4">
+              <img src={budgetRoomImg1} alt="SingleRoomIMG" className="responsive-img materialboxed" />
             </div>
-            <div class="col s12 m4 l4">
-              <img src={budgetRoomImg2} alt="SingleRoomIMG" class="responsive-img" />
+            <div className="col s12 m4 l4">
+              <img src={budgetRoomImg2} alt="SingleRoomIMG" className="responsive-img materialboxed" />
             </div>
  
-      <span class="title">Title</span>
+      <span className="title">Title</span>
       <p>First Line <br/>
          Second Line
       </p>
       </div>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
     </li>
-    <li class="collection-item avatar">
-      <i class="material-icons circle">folder</i>
-      <span class="title">Title</span>
+    <li className="collection-item avatar">
+      <i className="material-icons circle">folder</i>
+      <span className="title">Title</span>
       <p>First Line <br/>
          Second Line
       </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      <a href="#!" className="secondary-content"><i classNamee="material-icons">grade</i></a>
     </li>
-    <li class="collection-item avatar">
-      <i class="material-icons circle green">insert_chart</i>
-      <span class="title">Title</span>
+    <li className="collection-item avatar">
+      <i className="material-icons circle green">insert_chart</i>
+      <span className="title">Title</span>
       <p>First Line <br/>
          Second Line
       </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
     </li>
-    <li class="collection-item avatar">
-      <i class="material-icons circle red">play_arrow</i>
-      <span class="title">Title</span>
+    <li className="collection-item avatar">
+      <i className="material-icons circle red">play_arrow</i>
+      <span className="title">Title</span>
       <p>First Line <br/>
          Second Line
       </p>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
     </li>
   </ul>
       {/****************************************** */}
-      <ul class="collection">
-        <li class="collection-header">
+      <ul className="collection">
+        <li className="collection-header">
           <h4>Our Rooms</h4>
         </li>
-        <li class="collection-item ">
-          <div class="row">
-            <div class="col s12 l8">
-              <img src={budgetImg} alt="SingleRoomIMG" class="responsive-img" />
+        <li className="collection-item ">
+          <div className="row">
+            <div className="col s12 l8">
+              <img src={budgetImg} alt="SingleRoomIMG" className="responsive-img" />
             </div>
-            <span class="title">Budget Room</span>
+            <span className="title">Budget Room</span>
             <p>
               First Line <br />
               Second Line
             </p>
-            <a href="#!" class="secondary-content">
-              <i class="material-icons">grade</i>
+            <a href="#!" className="secondary-content">
+              <i className="material-icons">grade</i>
             </a>
           </div>
         </li>
-        <li class="collection-item">
+        <li className="collection-item">
           {" "}
-          <div class="row">
-            <div class="col s12 l8">
-              <img src={singleImg} alt="SingleRoomIMG" class="responsive-img" />
+          <div className="row">
+            <div className="col s12 l8">
+              <img src={singleImg} alt="SingleRoomIMG" className="responsive-img" />
             </div>
-            <span class="title">Title</span>
+            <span className="title">Title</span>
             <p>
               First Line <br />
               Second Line
             </p>
-            <a href="#!" class="secondary-content">
-              <i class="material-icons">grade</i>
+            <a href="#!" className="secondary-content">
+              <i className="material-icons">grade</i>
             </a>
           </div>
         </li>
-        <li class="collection-item">
+        <li className="collection-item">
           {" "}
-          <div class="row">
-            <div class="col s12 l8">
-              <img src={doubleImg} alt="DoubleIMG" class="responsive-img" />
+          <div className="row">
+            <div className="col s12 l8">
+              <img src={doubleImg} alt="DoubleIMG" className="responsive-img" />
             </div>
-            <span class="title">Title</span>
+            <span className="title">Title</span>
             <p>
               First Line <br />
               Second Line
             </p>
-            <a href="#!" class="secondary-content">
-              <i class="material-icons">grade</i>
+            <a href="#!" className="secondary-content">
+              <i className="material-icons">grade</i>
             </a>
           </div>
         </li>
-        <li class="collection-item">
+        <li className="collection-item">
           {" "}
-          <div class="row">
-            <div class="col s12 l8">
-              <img src={twinImg} alt="TwinRoomIMG" class="responsive-img" />
+          <div className="row">
+            <div className="col s12 l8">
+              <img src={twinImg} alt="TwinRoomIMG" className="responsive-img" />
             </div>
-            <span class="title">Title</span>
+            <span className="title">Title</span>
             <p>
               First Line <br />
               Second Line
             </p>
-            <a href="#!" class="secondary-content">
-              <i class="material-icons">grade</i>
+            <a href="#!" className="secondary-content">
+              <i className="material-icons">grade</i>
             </a>
           </div>
         </li>
-        <li class="collection-item">
+        <li className="collection-item">
           {" "}
-          <div class="row">
-            <div class="col s12 l8">
+          <div className="row">
+            <div className="col s12 l8">
               <img
                 src={tripleAImg}
                 alt="TripleRoomIMG"
-                class="responsive-img"
+                className="responsive-img"
               />
             </div>
-            <span class="title">Title</span>
+            <span className="title">Title</span>
             <p>
               First Line <br />
               Second Line
             </p>
-            <a href="#!" class="secondary-content">
-              <i class="material-icons">grade</i>
+            <a href="#!" className="secondary-content">
+              <i className="material-icons">grade</i>
             </a>
           </div>
         </li>
