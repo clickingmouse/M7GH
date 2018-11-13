@@ -5,6 +5,8 @@ import Home from "./components/home/Home";
 import GettingHere from "./components/gettinghere/GettingHere";
 import Contact from "./components/contact/Contact";
 import GuidesGuide from "./components/guidesguide/GuidesGuide";
+import Guides from "./components/guides/Guides";
+
 import AroundUs from "./components/aroundus/AroundUs";
 import About from "./components/about/About";
 import Footer from "./components/layout/Footer";
@@ -22,7 +24,7 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/getting-here" component={GettingHere} />
           <Route path="/around-us" component={AroundUs} />
-          <Route path="/guides-guide" component={GuidesGuide} />
+          <Route path="/guides" component={Guides} />
           <Route path="/contact" component={Contact} />
           <Footer />
         </div>
