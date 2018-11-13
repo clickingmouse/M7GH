@@ -20,6 +20,9 @@ const RoomsCollection = () => {
   return (
     <div>
       <ul className="collection">
+        <li className="collection-header">
+          <h4>Our Rooms</h4>
+        </li>
         <li className="collection-item ">
           <div className="row">
             <div className="col s16  l4">
@@ -123,7 +126,7 @@ const RoomsCollection = () => {
             </div>
 
             <span className="title">
-              <bold>Twin</bold>
+              <bold>Twin Room</bold>
             </span>
             <p>
               First Line <br />
@@ -150,102 +153,8 @@ const RoomsCollection = () => {
             </div>
 
             <span className="title">
-              <bold>Triple</bold>
+              <strong>Triple Room</strong>
             </span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-          </div>
-        </li>
-      </ul>
-      {/****************************************** */}
-      <ul className="collection">
-        <li className="collection-header">
-          <h4>Our Rooms</h4>
-        </li>
-        <li className="collection-item ">
-          <div className="row">
-            <div className="col s12 l8">
-              <img
-                src={budgetImg}
-                alt="SingleRoomIMG"
-                className="responsive-img"
-              />
-            </div>
-            <span className="title">Budget Room</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-            <a href="#!" className="secondary-content">
-              <i className="material-icons">grade</i>
-            </a>
-          </div>
-        </li>
-        <li className="collection-item">
-          {" "}
-          <div className="row">
-            <div className="col s12 l8">
-              <img
-                src={singleImg}
-                alt="SingleRoomIMG"
-                className="responsive-img"
-              />
-            </div>
-            <span className="title">Title</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-            <a href="#!" className="secondary-content">
-              <i className="material-icons">grade</i>
-            </a>
-          </div>
-        </li>
-        <li className="collection-item">
-          {" "}
-          <div className="row">
-            <div className="col s12 l8">
-              <img src={doubleImg} alt="DoubleIMG" className="responsive-img" />
-            </div>
-            <span className="title">Title</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-            <a href="#!" className="secondary-content">
-              <i className="material-icons">grade</i>
-            </a>
-          </div>
-        </li>
-        <li className="collection-item">
-          {" "}
-          <div className="row">
-            <div className="col s12 l8">
-              <img src={twinImg} alt="TwinRoomIMG" className="responsive-img" />
-            </div>
-            <span className="title">Title</span>
-            <p>
-              First Line <br />
-              Second Line
-            </p>
-            <a href="#!" className="secondary-content">
-              <i className="material-icons">grade</i>
-            </a>
-          </div>
-        </li>
-        <li className="collection-item">
-          {" "}
-          <div className="row">
-            <div className="col s12 l8">
-              <img
-                src={tripleAImg}
-                alt="TripleRoomIMG"
-                className="responsive-img"
-              />
-            </div>
-            <span className="title">Title</span>
             <p>
               First Line <br />
               Second Line
