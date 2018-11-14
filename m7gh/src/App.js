@@ -33,6 +33,8 @@ class App extends Component {
             <Route path="/guides/:id" component={GuideDetails} />
             <Route path="/contact" component={Contact} />
             <Route path="/signup" component={SignUp} />
+            <Route path="/signin" component={SignIn} />
+
             <Route path="/create-guide" component={CreateGuide} />
           </Switch>
           <Footer />
