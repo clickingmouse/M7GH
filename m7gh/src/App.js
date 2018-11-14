@@ -13,6 +13,7 @@ import Footer from "./components/layout/Footer";
 import OurRooms from "./components/ourrooms/OurRooms";
 import SignIn from "./components/auth/SignIn";
 import SignUp from "./components/auth/SignUp";
+import CreateGuide from "./components/guides/CreateGuide";
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
             <Route path="/guides/:id" component={GuideDetails} />
             <Route path="/contact" component={Contact} />
             <Route path="/signup" component={SignUp} />
+            <Route path="/create-guide" component={CreateGuide} />
           </Switch>
           <Footer />
         </div>
