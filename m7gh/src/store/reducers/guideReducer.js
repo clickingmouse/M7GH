@@ -8,6 +8,12 @@ const initialState = {
 };
 
 const guideReducer = (state = initialState, action) => {
+  console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXx");
+  console.log(action.type);
+  switch (action.type) {
+    case "CREATE_GUIDE":
+      console.log("created guide", action.guide);
+  }
   return state;
 };
 export default guideReducer;
