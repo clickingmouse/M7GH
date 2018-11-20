@@ -7,7 +7,7 @@ export const createGuide = guide => {
   // instead we return a function
   // pausing dispatch
   //dispatch function dispatches an action to reducer
-  return (dispatch, getState) => {
+  return (dispatch, getState, { getFirebase, getFirestore }) => {
     //make async call
     dispatch({
       type: "CREATE_GUIDE",
