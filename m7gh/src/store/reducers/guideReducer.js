@@ -13,7 +13,13 @@ const guideReducer = (state = initialState, action) => {
   switch (action.type) {
     case "CREATE_GUIDE":
       console.log("created guide", action.guide);
+      return state;
+    case "CREATE_GUIDE_ERROR":
+      console.log("create guide error", action.err);
+      return state;
+    default:
+      return state;
   }
-  return state;
+  //  return state;
 };
 export default guideReducer;

@@ -9,10 +9,28 @@ export const createGuide = guide => {
   //dispatch function dispatches an action to reducer
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     //make async call
-    dispatch({
-      type: "CREATE_GUIDE",
-      guide: guide
-    });
+    const firestore = getFirestore();
+    firestore
+      .collection("guides")
+      .add({
+        ...guide,
+        authorFirstName: "K",
+        authorLastName: "K.",
+        authorId: 123,
+        createdAt: new Date()
+      })
+      .then(() => {
+        dispatch({
+          type: "CREATE_GUIDE",
+          guide: guide
+        });
+      })
+      .catch(err => {
+        dispatch({
+          type: "CREATE_GUIDE_ERR",
+          err
+        });
+      });
   };
 };
 
