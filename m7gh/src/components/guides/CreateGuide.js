@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { createGuide } from "../../store/actions/guideActions";
+import { connect } from "react-redux";
 
 class CreateGuide extends Component {
   state = {
@@ -13,7 +15,8 @@ class CreateGuide extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log(this.state);
+    //console.log(this.state);
+    this.props.createGuide(this.state);
   };
   render() {
     return (
@@ -46,5 +49,17 @@ class CreateGuide extends Component {
     );
   }
 }
+//take dispatch method
+//returns an object, and add a method :: createGuide to prop
+// when prop.createGuide is called, calls a function to dispatch
+// createGuide ActionCreator
+const mapDispatchToProps = dispatch => {
+  return {
+    createGuide: guide => dispatch(createGuide(guide))
+  };
+};
 
-export default CreateGuide;
+export default connect(
+  null,
+  mapDispatchToProps
+)(CreateGuide);

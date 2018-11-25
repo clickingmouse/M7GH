@@ -1,13 +1,13 @@
 import React from "react";
 import GuidesSummary from "./GuidesSummary";
 
-const GuidesList = () => {
+const GuidesList = ({ guides }) => {
   return (
     <div className="guide-list section">
-      <GuidesSummary />
-      <GuidesSummary />
-      <GuidesSummary />
-      <GuidesSummary />
+      {guides &&
+        guides.map(guide => {
+          return <GuidesSummary guide={guide} key={guide.id} />;
+        })}
     </div>
   );
 };
