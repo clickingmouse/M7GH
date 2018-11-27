@@ -8,8 +8,8 @@ const GuidesList = ({ guides }) => {
       {guides &&
         guides.map(guide => {
           return (
-            <Link to={"/guides/" + guide.id}>
-              <GuidesSummary guide={guide} key={guide.id} />
+            <Link to={"/guides/" + guide.id} key={guide.id}>
+              <GuidesSummary guide={guide} />
             </Link>
           );
         })}

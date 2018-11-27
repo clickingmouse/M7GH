@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 const SignedInLinks = () => {
   return (
-    <ul class="right">
+    <ul className="right">
       <li>
         <NavLink to="/create-guide">New Post</NavLink>
       </li>
