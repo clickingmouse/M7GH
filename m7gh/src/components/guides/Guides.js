@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Newest from "./Newest";
 import GuidesList from "./GuidesList";
 import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
+
 export class Guides extends Component {
   render() {
     //console.log(this.props);
@@ -25,11 +28,16 @@ export class Guides extends Component {
 //map store state to prop of this component
 // takes in state of store
 const mapStateToProps = state => {
+  console.log(state);
   // return a property
   // represent which property are attached to props of this component
   return {
-    guides: state.guideStateOfStore.guides
+    //guides: state.guideStateOfStore.guides
+    guides: state.firestore.ordered.guides
   };
 };
 
-export default connect(mapStateToProps)(Guides);
+export default compose(
+  connect(mapStateToProps),
+  firestoreConnect([{ collection: "guides" }])
+)(Guides);

@@ -1,13 +1,15 @@
 import authReducer from "./authReducers";
 import guideReducer from "./guideReducer";
 import { combineReducers } from "redux";
+import { firestoreReducer } from "redux-firestore";
 
 const rootReducer = combineReducers({
   // state of the store will have ---
   // property : corresponding reducer
   // reducer will update property of corresponding state
   authStateOfStore: authReducer,
-  guideStateOfStore: guideReducer
+  guideStateOfStore: guideReducer,
+  firestore: firestoreReducer
 });
 
 export default rootReducer;
