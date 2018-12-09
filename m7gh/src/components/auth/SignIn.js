@@ -20,6 +20,7 @@ class SignIn extends Component {
   };
   render() {
     console.log(this.props);
+    const { authError } = this.props;
     return (
       <div>
         <div className="container">
@@ -40,6 +41,9 @@ class SignIn extends Component {
             </div>
             <div className="input-field">
               <button className="btn pink lighten-1 z-depth-0">Login</button>
+              <div className="red-text center">
+                {authError ? <p>{authError}</p> : null}
+              </div>
             </div>
           </form>
         </div>
@@ -54,7 +58,13 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
+const mapStateToProps = state => {
+  return {
+    authError: state.authStateOfStore.authError
+  };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(SignIn);
