@@ -2,11 +2,15 @@ import React from "react";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
+import { Redirect } from "react-router-dom";
 
 const GuideDetails = props => {
   const id = props.match.params.id;
   //console.log("YYYYY");
   //console.log(props);
+  const { auth } = props;
+  if (!auth.uid) return <Redirect to="/signin" />;
+
   const { guide } = props;
 
   if (guide) {
@@ -38,7 +42,7 @@ const mapStateToProps = (state, ownProps) => {
   const id = ownProps.match.params.id;
   const guides = state.firestore.data.guides;
   const guide = guides ? guides[id] : null;
-  return { guide: guide };
+  return { guide: guide, auth: state.firebase.auth };
 };
 
 export default compose(

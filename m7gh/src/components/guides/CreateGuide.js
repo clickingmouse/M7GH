@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { createGuide } from "../../store/actions/guideActions";
 import { connect } from "react-redux";
-
+import { Redirect } from "react-router-dom";
 class CreateGuide extends Component {
   state = {
     title: "",
@@ -19,6 +19,8 @@ class CreateGuide extends Component {
     this.props.createGuide(this.state);
   };
   render() {
+    const { auth } = this.props;
+    if (!auth.uid) return <Redirect to="/signin" />;
     return (
       <div>
         <div className="container">
@@ -59,7 +61,13 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
+const mapStateToProps = state => {
+  return {
+    auth: state.firebase.auth
+  };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(CreateGuide);

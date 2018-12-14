@@ -4,11 +4,13 @@ import GuidesList from "./GuidesList";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import { compose } from "redux";
-
+import { Redirect } from "react-router-dom";
 export class Guides extends Component {
   render() {
     //console.log(this.props);
-    const { guides } = this.props;
+    const { guides, auth } = this.props;
+    if (!auth.uid) return <Redirect to="/signin" />;
+
     return (
       <div class="guides container">
         <p>A Guides</p>
@@ -33,7 +35,8 @@ const mapStateToProps = state => {
   // represent which property are attached to props of this component
   return {
     //guides: state.guideStateOfStore.guides
-    guides: state.firestore.ordered.guides
+    guides: state.firestore.ordered.guides,
+    auth: state.firebase.auth
   };
 };
 
