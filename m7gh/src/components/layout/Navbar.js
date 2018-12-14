@@ -5,7 +5,10 @@ import SignedOutLinks from "./SignedOutLinks";
 //import { Link, NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 
-const Navbar = () => {
+const Navbar = props => {
+  const { auth } = props;
+  //console.log(auth)
+  const links = auth.uid ? <SignedInLinks /> : <SignedOutLinks />;
   return (
     <nav className="nav-extended grey grey-darken-1">
       <div className="container">
@@ -13,15 +16,14 @@ const Navbar = () => {
           <NavLink to="/" className="brand-logo ">
             Majestic 7 Guesthouse
           </NavLink>
-          <SignedInLinks />
-          <SignedOutLinks />
+          {links}
           <a href="" className="sidenav-trigger" data-target="mobile-menu">
             <i className="material-icons">menu</i>
           </a>
         </div>
 
         <div className="nav-content">
-          <div className=" hide-on-med-and-down ">
+          <div className="hide-on-small-only">
             <ul className="tabs tabs-transparent">
               <li>
                 <NavLink to="/home">Home</NavLink>
@@ -66,8 +68,10 @@ const Navbar = () => {
 };
 
 const mapStateToProps = state => {
-  console.log(state);
-  return {};
+  //console.log(state);
+  return {
+    auth: state.firebase.auth
+  };
 };
 
 export default connect(mapStateToProps)(Navbar);
