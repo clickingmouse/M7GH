@@ -17,6 +17,7 @@ class CreateGuide extends Component {
     e.preventDefault();
     //console.log(this.state);
     this.props.createGuide(this.state);
+    this.props.history.push("/guides");
   };
   render() {
     const { auth } = this.props;

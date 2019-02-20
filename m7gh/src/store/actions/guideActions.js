@@ -10,13 +10,15 @@ export const createGuide = guide => {
   return (dispatch, getState, { getFirebase, getFirestore }) => {
     //make async call
     const firestore = getFirestore();
+    const profile = getState().firebase.profile;
+    const authorId = getState().firebase.auth.uid;
     firestore
       .collection("guides")
       .add({
         ...guide,
-        authorFirstName: "K",
-        authorLastName: "K.",
-        authorId: 123,
+        authorFirstName: profile.firstName,
+        authorLastName: profile.lastName,
+        authorId: authorId,
         createdAt: new Date()
       })
       .then(() => {
