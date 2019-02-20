@@ -42,7 +42,8 @@ export const signUp = newUser => {
           .doc(resp.user.uid)
           .set({
             firstName: newUser.firstName,
-            lastname: newUser.lastName,
+            //
+            lastName: newUser.lastName,
             initials: newUser.firstName[0] + newUser.lastName[0]
           });
       })
