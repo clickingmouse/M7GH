@@ -8,7 +8,7 @@ import { Redirect } from "react-router-dom";
 export class Guides extends Component {
   render() {
     //console.log(this.props);
-    const { guides, auth } = this.props;
+    const { guides, auth, recentActivities } = this.props;
     if (!auth.uid) return <Redirect to="/signin" />;
 
     return (
@@ -19,7 +19,7 @@ export class Guides extends Component {
             <GuidesList guides={guides} />
           </div>
           <div className="col s12 m5 offset-m1">
-            <Newest />
+            <Newest latest={recentActivities} />
           </div>
         </div>
       </div>
@@ -36,11 +36,15 @@ const mapStateToProps = state => {
   return {
     //guides: state.guideStateOfStore.guides
     guides: state.firestore.ordered.guides,
-    auth: state.firebase.auth
+    auth: state.firebase.auth,
+    recentActivities: state.firestore.ordered.recentActivities
   };
 };
 
 export default compose(
   connect(mapStateToProps),
-  firestoreConnect([{ collection: "guides" }])
+  firestoreConnect([
+    { collection: "guides", orderBy: ["createdAt", "desc"] },
+    { collection: "recentActivities", limit: 3, orderBy: ["time", "desc"] }
+  ])
 )(Guides);
